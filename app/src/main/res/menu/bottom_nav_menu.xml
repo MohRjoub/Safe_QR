@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/history_selector"
+        android:title="History" />
+
+    <item
+        android:id="@+id/nav_scan"
+        android:icon="@drawable/scan_selector"
+        android:title="Scan" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile_selector"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/help_selector"
+        android:title="Help" />
+
+</menu>
