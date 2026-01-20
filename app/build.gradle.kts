@@ -52,6 +52,7 @@ dependencies {
     implementation("androidx.camera:camera-view:1.3.4")
     implementation("com.google.mlkit:barcode-scanning:17.2.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation ("androidx.biometric:biometric:1.2.0-alpha05")
 
     implementation("com.android.volley:volley:1.2.1")
 }

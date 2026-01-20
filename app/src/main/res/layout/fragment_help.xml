@@ -24,7 +24,6 @@
             android:paddingEnd="16dp"
             android:paddingBottom="18dp">
 
-            <!-- Title -->
             <TextView
                 android:id="@+id/tvHelpTitle"
                 android:layout_width="match_parent"
@@ -46,7 +45,6 @@
                 android:textColor="#64748B"
                 android:gravity="center"/>
 
-            <!-- Welcome card -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,7 +80,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Getting started -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,14 +104,12 @@
                         android:textSize="15sp"
                         android:textColor="#0F172A"/>
 
-                    <!-- Steps container -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_marginTop="12dp">
 
-                        <!-- 1 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -142,7 +137,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 2 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -171,7 +165,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 3 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -200,7 +193,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 4 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -233,7 +225,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Scanning & opening -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -266,14 +257,12 @@
                         android:textSize="12sp"
                         android:textColor="#64748B"/>
 
-                    <!-- Steps container -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_marginTop="12dp">
 
-                        <!-- 1 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -301,7 +290,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 2 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -330,7 +318,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 3 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -359,7 +346,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 4 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -388,7 +374,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 5 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -421,7 +406,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Risk levels -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -483,7 +467,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Permissions & privacy -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -508,14 +491,12 @@
                         android:textSize="15sp"
                         android:textColor="#0F172A"/>
 
-                    <!-- bullet list -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_marginTop="12dp">
 
-                        <!-- 1 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -544,7 +525,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 2 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -573,7 +553,6 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- 3 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -606,7 +585,6 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-            <!-- Scan history -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -725,7 +703,6 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-            <!-- Account & profile -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -844,7 +821,6 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-            <!-- FAQ -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -875,7 +851,6 @@
                         android:orientation="vertical"
                         android:layout_marginTop="12dp">
 
-                        <!-- Q1 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -903,12 +878,10 @@
                                 android:lineSpacingExtra="2dp"/>
                         </LinearLayout>
 
-                        <!-- spacing -->
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="12dp"/>
 
-                        <!-- Q2 -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -940,7 +913,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Contact -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -68,7 +68,6 @@ public class HistoryFragment extends Fragment {
         adapter = new ScanHistoryAdapter(
                 new ArrayList<>(),
 
-                // item click -> open ScanResultActivity
                 this::openHistoryItemInResultScreen,
 
                 new ScanHistoryAdapter.OnMenuActionListener() {

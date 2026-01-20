@@ -301,7 +301,6 @@ public class ProfileFragment extends Fragment {
         etOtp.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
         til.addView(etOtp);
 
-        // Small countdown message
         final long totalMs = 5 * 60 * 1000L;
 
         androidx.appcompat.app.AlertDialog dialog = new MaterialAlertDialogBuilder(requireContext())
@@ -312,7 +311,6 @@ public class ProfileFragment extends Fragment {
                 .setPositiveButton("Verify & Save", null)
                 .show();
 
-        // optional: countdown (not required, but nice)
         CountDownTimer timer = new CountDownTimer(totalMs, 1000) {
             @Override public void onTick(long ms) {
                 long sec = ms / 1000;
@@ -453,14 +451,11 @@ public class ProfileFragment extends Fragment {
     }
 
     private void doLogout() {
-        // 1) Clear encrypted token/session
         SessionManager.logout(requireContext());
 
-        // 2) Clear old prefs where you store user_id
         SharedPreferences sp = requireContext().getSharedPreferences("safeqr_prefs", 0);
         sp.edit().clear().apply();
 
-        // 3) Go to LoginActivity and clear back stack
         Intent intent = new Intent(requireContext(), LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);

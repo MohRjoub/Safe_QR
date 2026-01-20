@@ -13,7 +13,6 @@
         android:padding="24dp"
         android:gravity="center_horizontal">
 
-        <!-- LOGO -->
         <ImageView
             android:id="@+id/imgLogo"
             android:layout_width="130dp"
@@ -24,7 +23,6 @@
             android:contentDescription="@string/app_name"
             android:scaleType="fitCenter"/>
 
-        <!-- TITLE -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +31,6 @@
             android:textStyle="bold"
             android:textColor="@android:color/black"/>
 
-        <!-- NAME -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +44,6 @@
                 android:inputType="textPersonName"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- EMAIL -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +57,6 @@
                 android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- PASSWORD -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +71,6 @@
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- PHONE -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,7 +84,6 @@
                 android:inputType="phone"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- SIGN UP BUTTON -->
         <Button
             android:id="@+id/btnSignup"
             android:layout_width="match_parent"
@@ -100,7 +93,6 @@
             android:backgroundTint="@color/colorPrimary"
             android:textColor="@android:color/white"/>
 
-        <!-- LOGIN LINK -->
         <TextView
             android:id="@+id/tvLogin"
             android:layout_width="wrap_content"

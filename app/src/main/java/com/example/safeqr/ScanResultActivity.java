@@ -51,7 +51,6 @@ public class ScanResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan_result);
 
-        // bind views (match YOUR XML)
         btnBack = findViewById(R.id.btnBack);
         chipStatus = findViewById(R.id.chipStatus);
         tvUrl = findViewById(R.id.tvUrl);
@@ -62,7 +61,6 @@ public class ScanResultActivity extends AppCompatActivity {
         btnOpen = findViewById(R.id.btnOpen);
         btnCancel = findViewById(R.id.btnCancel);
 
-        // get extras
         Intent intent = getIntent();
         url = intent.getStringExtra(EXTRA_URL);
         status = intent.getStringExtra(EXTRA_STATUS);
@@ -75,14 +73,11 @@ public class ScanResultActivity extends AppCompatActivity {
 
         tvUrl.setText(url);
 
-        // apply UI based on API
         applyThemeAndTexts(status, risk, reasonsJson);
 
-        // back/cancel
         btnBack.setOnClickListener(v -> finish());
         btnCancel.setOnClickListener(v -> finish());
 
-        // 5 seconds delay to enable open
         startOpenCountdown(10);
 
         btnOpen.setOnClickListener(v -> {
@@ -101,7 +96,6 @@ public class ScanResultActivity extends AppCompatActivity {
     private void applyThemeAndTexts(String st, double riskScore, String reasonsJson) {
         st = (st == null) ? "unknown" : st.trim().toLowerCase();
 
-        // ----- Colors + badge -----
         if ("safe".equals(st)) {
             chipStatus.setText("Safe link");
             chipStatus.setChipBackgroundColor(ColorStateList.valueOf(Color.parseColor("#E8F5E9")));
@@ -122,7 +116,6 @@ public class ScanResultActivity extends AppCompatActivity {
             reasonsBox.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FFF3E0"))); // light orange
         }
 
-        // ----- Title + note wording (depends on status) -----
         String title;
         String note;
 
@@ -139,10 +132,8 @@ public class ScanResultActivity extends AppCompatActivity {
 
         tvWhyTitle.setText(title);
 
-        // ----- Reasons text built from JSON + include risk score -----
         tvReasons.setText(buildDetailsText(st, riskScore, reasonsJson));
 
-        // ----- Bottom note -----
         tvNote.setText(note);
     }
 
@@ -153,7 +144,6 @@ public class ScanResultActivity extends AppCompatActivity {
         List<String> medium = new ArrayList<>();
         List<String> info = new ArrayList<>();
 
-        // risk line
         String riskLine = formatRiskLine(st, riskScore);
 
         try {
@@ -188,11 +178,9 @@ public class ScanResultActivity extends AppCompatActivity {
 
         StringBuilder out = new StringBuilder();
 
-        // Always show risk score line first
         out.append("• ").append(riskLine).append("\n");
 
         if ("safe".equals(st)) {
-            // Safe: show checks + minor cautions
             if (!info.isEmpty()) {
                 for (String s : info) out.append("• ").append(s).append("\n");
             } else {
@@ -223,7 +211,6 @@ public class ScanResultActivity extends AppCompatActivity {
             return out.toString().trim();
         }
 
-        // suspicious
         if (!high.isEmpty()) {
             out.append("• High risk signals:\n");
             for (String s : high) out.append("• ").append(s).append("\n");

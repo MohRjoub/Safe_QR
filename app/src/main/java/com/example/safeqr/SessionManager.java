@@ -30,7 +30,6 @@ public class SessionManager {
         }
     }
 
-    /* ================= LOGIN ================= */
 
     public static void saveToken(Context context, String token) {
         getEncryptedPrefs(context)
@@ -48,7 +47,6 @@ public class SessionManager {
         return getEncryptedPrefs(context).getBoolean(KEY_LOGGED_IN, false);
     }
 
-    /* ================= LOGOUT ================= */
 
     public static void logout(Context context) {
         getEncryptedPrefs(context).edit().clear().apply();

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#F7FCFC">
 
-    <!-- Scrollable content (profile fields) -->
     <ScrollView
         android:id="@+id/scrollProfile"
         android:layout_width="0dp"
@@ -25,7 +24,6 @@
             android:padding="24dp"
             android:gravity="center_horizontal">
 
-            <!-- Profile Image -->
             <ImageView
                 android:id="@+id/imgProfile"
                 android:layout_width="110dp"
@@ -47,7 +45,6 @@
             android:textColor="#0F172A"
             android:textSize="18sp" />
 
-        <!-- EMAIL under the name -->
         <TextView
             android:id="@+id/tvProfileEmail"
             android:layout_width="wrap_content"
@@ -59,7 +56,6 @@
             android:textColor="#64748B"
             android:gravity="center" />
 
-            <!-- Name -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutName"
                 android:layout_width="match_parent"
@@ -75,7 +71,6 @@
                     android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Email -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutEmail"
                 android:layout_width="match_parent"
@@ -92,7 +87,6 @@
                     android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Password -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutPassword"
                 android:layout_width="match_parent"
@@ -110,7 +104,6 @@
                     android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Phone -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutPhone"
                 android:layout_width="match_parent"
@@ -127,7 +120,6 @@
                     android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Edit button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnEditProfile"
             android:layout_width="match_parent"

@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="#F6F7F8">
 
-    <!-- Top bar -->
     <ImageView
         android:id="@+id/btnBack"
         android:layout_width="24dp"
@@ -32,7 +31,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Card -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
         android:layout_width="0dp"
@@ -50,7 +48,6 @@
             android:padding="18dp"
             android:orientation="vertical">
 
-            <!-- Status pill -->
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipStatus"
                 android:layout_width="wrap_content"
@@ -61,7 +58,6 @@
                 app:chipCornerRadius="18dp"
                 app:chipIconVisible="false"/>
 
-            <!-- scanned link -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,7 +78,6 @@
                 android:ellipsize="end"
                 android:layout_marginTop="6dp"/>
 
-            <!-- Why risky -->
             <TextView
                 android:id="@+id/tvWhyTitle"
                 android:layout_width="wrap_content"
@@ -93,7 +88,6 @@
                 android:textColor="#1A1A1A"
                 android:layout_marginTop="16dp"/>
 
-            <!-- Reasons box -->
             <LinearLayout
                 android:id="@+id/reasonsBox"
                 android:layout_width="match_parent"
@@ -113,7 +107,6 @@
                     android:lineSpacingExtra="4dp"/>
             </LinearLayout>
 
-            <!-- Info note -->
             <TextView
                 android:id="@+id/tvNote"
                 android:layout_width="match_parent"
@@ -124,7 +117,6 @@
                 android:textColor="#4A4A4A"
                 android:lineSpacingExtra="3dp"/>
 
-            <!-- Open button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnOpen"
                 android:layout_width="match_parent"
@@ -134,7 +126,6 @@
                 android:textAllCaps="false"
                 app:cornerRadius="18dp"/>
 
-            <!-- Cancel -->
             <TextView
                 android:id="@+id/btnCancel"
                 android:layout_width="wrap_content"

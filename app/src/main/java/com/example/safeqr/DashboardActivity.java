@@ -20,7 +20,6 @@ public class DashboardActivity extends AppCompatActivity {
         bottomNav.setItemIconTintList(null);
         bottomNav.setItemTextColor(null);
 
-        // Default fragment
         if (savedInstanceState == null) {
             loadFragment(new ScanFragment());
             bottomNav.setSelectedItemId(R.id.nav_scan);

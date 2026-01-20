@@ -97,7 +97,6 @@ public class ScanFragment extends Fragment {
         btnGallery.setOnClickListener(v -> pickImageLauncher.launch("image/*"));
         btnFlash.setOnClickListener(v -> toggleFlash());
 
-        // Flash support
         Context ctx = requireContext();
         if (!ctx.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)) {
             btnFlash.setEnabled(false);
